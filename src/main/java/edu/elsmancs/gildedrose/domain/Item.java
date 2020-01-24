@@ -3,8 +3,8 @@ package edu.elsmancs.gildedrose.domain;
 public class Item {
 
     private String name = "";
-    private Integer sell_in = 0;
-    private Integer quality = 0;
+    protected Integer sell_in = 0;
+    protected Integer quality = 0;
 
     public Item(String name, Integer sell_in, Integer quality) {
         this.name = name;
