@@ -2,11 +2,11 @@ package edu.elsmancs.gildedrose.domain;
 
 public class NormalItem extends Item {
 
-    public NormalItem(String name, Integer sell_in, Integer quality) {
+    public NormalItem(String name, int sell_in, int quality) {
         super(name, sell_in, quality);
     }
 
-    public void setQuality(Integer value) {
+    public void setQuality(int value) {
         this.quality = value;
     }
 
@@ -14,7 +14,7 @@ public class NormalItem extends Item {
         this.sell_in = this.getSell_in() - 1;
     }
 
-    public void computeQuality(Integer value) {
+    public void computeQuality(int value) {
 
         if (this.getQuality() + value > 50) {
             this.setQuality(50);
