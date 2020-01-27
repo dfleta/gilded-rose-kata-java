@@ -1,10 +1,19 @@
 package edu.elsmancs.gildedrose.domain;
 
-class Item {
+/**
+ * Item 17: Minimize mutability
+ * Ensure that the class can’t be extended.
+ * Bloch, Joshua; Effective Java, Third Edition.
+ */
+final class Item {
 
+    /** 
+     * Item 17: Minimize mutability.
+     * Bloch, Joshua; Effective Java, Third Edition.
+     */
     private final String name;
     /** 
-     * Item 61: Prefer primitive types to boxed primitives
+     * Item 61: Prefer primitive types to boxed primitives.
      * Bloch, Joshua; Effective Java, Third Edition.
     */
     private int sell_in = 0;
