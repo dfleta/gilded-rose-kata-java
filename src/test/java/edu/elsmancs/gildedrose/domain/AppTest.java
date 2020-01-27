@@ -17,6 +17,7 @@ public class AppTest {
         assertEquals("+5 Dexterity Vest", item.getName());
         assertEquals("10", item.getSell_in().toString());
         assertEquals("20", item.getQuality().toString());
+        System.out.println(item);
     }
 
     @Test
