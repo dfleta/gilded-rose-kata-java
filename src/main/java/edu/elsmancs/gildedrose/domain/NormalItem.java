@@ -6,21 +6,28 @@ public class NormalItem extends Item {
         super(name, sell_in, quality);
     }
 
-    public void setQuality(int value) {
-        this.quality = value;
+    @Override
+    public String getName() {
+        return super.getName();
     }
 
-    public void setSell_in() {
-        this.sell_in = this.getSell_in() - 1;
+    @Override
+    public int getSell_in() {
+        return super.getSell_in();
     }
 
-    public void computeQuality(int value) {
+    @Override
+    public int getQuality() {
+        return super.getQuality();
+    }
 
-        if (this.getQuality() + value > 50) {
-            this.setQuality(50);
+    private void computeQuality(int value) {
+
+        if (getQuality() + value > 50) {
+            setQuality(50);
         }
-        else if (this.getQuality() + value >= 0) {
-            this.setQuality(this.getQuality() + value);
+        else if (getQuality() + value >= 0) {
+            setQuality(getQuality() + value);
         }
         else {
             this.setQuality(0);
@@ -28,13 +35,12 @@ public class NormalItem extends Item {
     }
 
     public void updateQuality() {
-        
-        if (this.getSell_in() > 0) {
-            this.computeQuality(-1);
-        } else {
-            this.computeQuality(-2);
-        }
-        this.setSell_in();
 
+        if (getSell_in() > 0) {
+            computeQuality(-1);
+        } else {
+            computeQuality(-2);
+        }
+        setSell_in();
     }
 }

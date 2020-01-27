@@ -1,16 +1,16 @@
 package edu.elsmancs.gildedrose.domain;
 
-public class Item {
+class Item {
 
-    private String name = "";
+    private final String name;
     /** 
      * Item 61: Prefer primitive types to boxed primitives
      * Bloch, Joshua; Effective Java, Third Edition.
     */
-    protected int sell_in = 0;
-    protected int quality = 0;
+    private int sell_in = 0;
+    private int quality = 0;
 
-    public Item(String name, int sell_in, int quality) {
+    Item(String name, int sell_in, int quality) {
         this.name = name;
         this.sell_in = sell_in;
         this.quality = quality;
@@ -36,15 +36,23 @@ public class Item {
         return itemDescription.toString();
     }
 
-    public String getName() {
+    String getName() {
         return this.name;
     }
 
-    public int getSell_in() {
+    int getSell_in() {
         return this.sell_in;
     }
 
-    public int getQuality() {
+    void setSell_in() {
+        this.sell_in = this.getSell_in() - 1;
+    }
+
+    int getQuality() {
         return this.quality;
+    }
+
+    void setQuality(int value) {
+        this.quality = value;
     }
 }
