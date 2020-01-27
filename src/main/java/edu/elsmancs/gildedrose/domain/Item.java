@@ -10,7 +10,7 @@ public class Item {
     protected int sell_in = 0;
     protected int quality = 0;
 
-    public Item(String name, Integer sell_in, Integer quality) {
+    public Item(String name, int sell_in, int quality) {
         this.name = name;
         this.sell_in = sell_in;
         this.quality = quality;
@@ -40,11 +40,11 @@ public class Item {
         return this.name;
     }
 
-    public Integer getSell_in() {
+    public int getSell_in() {
         return this.sell_in;
     }
 
-    public Integer getQuality() {
+    public int getQuality() {
         return this.quality;
     }
 }
