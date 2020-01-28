@@ -30,11 +30,15 @@ public class NormalItem {
         return item.getSell_in();
     }
 
+    public void setSell_in() {
+        item.setSell_in();
+    }
+
     public int getQuality() {
         return item.getQuality();
     }
 
-    private void computeQuality(int value) {
+    void computeQuality(int value) {
 
         if (getQuality() + value > 50) {
             item.setQuality(50);
