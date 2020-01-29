@@ -5,14 +5,14 @@ import java.util.List;
 
 public class GildedRose {
 
-    private List<NormalItem> inventario = new ArrayList<NormalItem>();
+    private List<NormalItem> inventory = new ArrayList<NormalItem>();
    
-    private List<NormalItem> getInventario() {
-        return this.inventario;
+    public List<NormalItem> inventory() {
+        return this.inventory;
     }
 
     public void addItem(NormalItem item) {
-        getInventario().add(item);
+        inventory().add(item);
     }
 
     /**
@@ -29,7 +29,7 @@ public class GildedRose {
     @Override
     public String toString() {
         StringBuilder representation = new StringBuilder();
-        for (NormalItem item : getInventario()) {
+        for (NormalItem item : inventory()) {
             representation.append(item.toString());
             representation.append('\n');
         }
