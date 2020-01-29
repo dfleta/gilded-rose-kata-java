@@ -35,7 +35,7 @@ public class NormalItem {
         return item.getSell_in();
     }
 
-    public void setSell_in() {
+    void setSell_in() {
         item.setSell_in();
     }
 
@@ -63,6 +63,6 @@ public class NormalItem {
         } else {
             computeQuality(-2);
         }
-        item.setSell_in();
+        setSell_in();
     }
 }
