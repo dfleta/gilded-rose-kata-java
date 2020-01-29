@@ -22,6 +22,11 @@ public class NormalItem {
         this.item = new Item(name, sell_in, quality);
     }
 
+    @Override
+    public String toString() {
+        return item.toString();
+    }
+
     public String getName() {
         return item.getName();
     }
