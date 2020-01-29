@@ -16,5 +16,4 @@ public class AgedBrie extends NormalItem {
         }
         setSell_in();
     }
-
 }
