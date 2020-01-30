@@ -15,6 +15,12 @@ public class GildedRose {
         inventory().add(item);
     }
 
+    public void updateQuality() {
+        for (NormalItem item : inventory()) {
+            item.updateQuality();
+        }
+    }
+
     /**
      * Returns a brief description of the Item. 
      * The exact details of the representation are unspecified

@@ -84,4 +84,19 @@ public class InheritanceTest {
         System.out.println("GildedRose addItem test:");
         System.out.println(shop.toString());
     }
+
+    @Test
+    public void updateQuality() {
+        GildedRose shop = new GildedRose();
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
+        AgedBrie brie = new AgedBrie("Aged Brie", 2, 0);
+        shop.addItem(normal);
+        shop.addItem(brie);
+        assertEquals(2, shop.inventory().size(), 0);
+        System.out.println("Dia 0:" + '\n' + shop.toString());
+        shop.updateQuality();
+        assertEquals(19, shop.inventory().get(0).getQuality(), 0);
+        assertEquals(1, shop.inventory().get(1).getQuality(), 0);
+        System.out.println("Dia 1:" + '\n' + shop.toString());
+    }
 }
