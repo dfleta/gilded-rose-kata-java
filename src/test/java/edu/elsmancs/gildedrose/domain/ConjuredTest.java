@@ -34,7 +34,7 @@ public class ConjuredTest {
     }
 
     @Test
-    public void updateQualityConjuredSellInCERO() {
+    public void updateQualityConjuredJustExpired() {
 
         Conjured conjured = new Conjured("Conjured Mana Cake", 0, 6);
         conjured.updateQuality();
@@ -43,7 +43,7 @@ public class ConjuredTest {
     }
 
     @Test
-    public void updateQualityConjuredBajoCERO() {
+    public void updateQualityConjuredExpired() {
 
         Conjured conjured = new Conjured("Conjured Mana Cake", -1, 6);
         conjured.updateQuality();

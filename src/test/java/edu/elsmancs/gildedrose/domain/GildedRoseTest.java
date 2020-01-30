@@ -22,7 +22,6 @@ public class GildedRoseTest {
 
     @Test
     public void toStringTest() {
-        shop = new GildedRose();
         shop.addItem(brie);
         brie = new AgedBrie("Aged Brie", 10, 10);
         shop.addItem(brie);

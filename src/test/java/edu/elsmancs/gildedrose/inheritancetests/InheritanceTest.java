@@ -32,7 +32,7 @@ public class InheritanceTest {
     }
 
     @Test
-    public void updateQualityNormalItemSellInCERO() {
+    public void updateQualityNormalItemExpired() {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 0, 20);
         normal.updateQuality();
@@ -41,7 +41,7 @@ public class InheritanceTest {
     }
 
     @Test
-    public void updateQualityNormalItemBajoCERO() {
+    public void qualityNormalItemMinZERO() {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 0);
         normal.updateQuality();
@@ -59,7 +59,7 @@ public class InheritanceTest {
     }
 
     @Test
-    public void updateQualitycheeseItem() {
+    public void updateQualityBrie() {
 
         AgedBrie cheese = new AgedBrie("Aged Brie", 2, 0);
         cheese.updateQuality();

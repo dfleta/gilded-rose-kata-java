@@ -22,7 +22,7 @@ public class SulfurasTest {
     }
 
     @Test
-    public void updateQualitySulfurasItem() {
+    public void updateQualitySulfuras() {
 
         Sulfuras sulfuras = new Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80);
         sulfuras.updateQuality();

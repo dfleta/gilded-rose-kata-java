@@ -33,7 +33,7 @@ public class NormalItemTest {
     }
 
     @Test
-    public void updateQualityNormalItemSellInCERO() {
+    public void updateQualityNormalItemExpired() {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 0, 20);
         normal.updateQuality();
@@ -42,7 +42,7 @@ public class NormalItemTest {
     }
 
     @Test
-    public void updateQualityNormalItemBajoCERO() {
+    public void qualityMinZERO() {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 0);
         normal.updateQuality();

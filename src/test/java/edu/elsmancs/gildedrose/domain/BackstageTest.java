@@ -55,4 +55,18 @@ public class BackstageTest {
         assertEquals(-1, pass.getSell_in(), 0);
         assertEquals(0, pass.getQuality(), 0);
     }
+
+    @Test
+    public void qualityMax50() {
+
+        Backstage pass = new Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 49);
+        pass.updateQuality();
+        assertEquals(4, pass.getSell_in(), 0);
+        assertEquals(50, pass.getQuality(), 0);
+
+        pass = new Backstage("Backstage passes to a TAFKAL80ETC concert", 9, 49);
+        pass.updateQuality();
+        assertEquals(8, pass.getSell_in(), 0);
+        assertEquals(50, pass.getQuality(), 0);
+    }
 }
