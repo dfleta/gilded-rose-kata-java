@@ -27,6 +27,11 @@ public class NormalItem {
         return item.toString();
     }
 
+    // SRP
+    Item getItem() {
+        return this.item;
+    }
+
     public String getName() {
         return item.getName();
     }
@@ -44,15 +49,6 @@ public class NormalItem {
     }
 
     void computeQuality(int value) {
-
-        /**
-         * Backstage pierde toda la quality
-         * cuando caduca el pase
-         */
-        if (value == 0) {
-            item.setQuality(0);
-            return;
-        }
 
         if (getQuality() + value > 50) {
             item.setQuality(50);

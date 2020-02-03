@@ -18,7 +18,12 @@ public class Backstage extends NormalItem {
             computeQuality(3);
         }
         else {
-            computeQuality(0);
+            /** 
+             * SRP: class Backstage should only have a reason to change
+             * Changes in Backstage quality rules should be only reflected
+             * in the class Backstage, not in NormalItem.
+             */
+            getItem().setQuality(0);
         }
         setSell_in();
     };
