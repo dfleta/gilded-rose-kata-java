@@ -1,6 +1,6 @@
 package edu.elsmancs.gildedrose.domain;
 
-public class NormalItem {
+public class NormalItem implements Updateable {
 
     /**
      * Item 18: Favor composition over inheritance.
@@ -61,6 +61,7 @@ public class NormalItem {
         }
     }
 
+    @Override
     public void updateQuality() {
 
         if (getSell_in() > 0) {

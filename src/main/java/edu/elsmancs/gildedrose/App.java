@@ -17,7 +17,7 @@ public class App {
          * inventory.
          */
 
-        List<NormalItem> items = List.of(new NormalItem("+5 Dexterity Vest", 10, 20),
+        List<Updateable> items = List.of(new NormalItem("+5 Dexterity Vest", 10, 20),
                                          new AgedBrie("Aged Brie", 2, 0),
                                          new NormalItem("Elixir of the Mongoose", 5, 7),
                                          new Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -26,7 +26,7 @@ public class App {
                                          new Backstage("Backstage passes to a TAFKAL80ETC concert", 10, 49),
                                          new Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 49));
         
-        for (NormalItem item : items) {
+        for (Updateable item : items) {
             shop.addItem(item);
         }
 
@@ -53,6 +53,7 @@ public class App {
          * polimorphism in action
          */
         shop.addItem(new Conjured("Conjured Mana Cake", 3, 6));
+        System.out.println("\t ####  New item conjured added ####");
         System.out.println(shop.toString());
 
         /**

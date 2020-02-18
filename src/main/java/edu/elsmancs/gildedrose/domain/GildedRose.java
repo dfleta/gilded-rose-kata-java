@@ -5,18 +5,18 @@ import java.util.List;
 
 public class GildedRose {
 
-    private List<NormalItem> inventory = new ArrayList<NormalItem>();
+    private List<Updateable> inventory = new ArrayList<Updateable>();
    
-    public List<NormalItem> inventory() {
+    public List<Updateable> inventory() {
         return this.inventory;
     }
 
-    public void addItem(NormalItem item) {
+    public void addItem(Updateable item) {
         inventory().add(item);
     }
 
     public void updateQuality() {
-        for (NormalItem item : inventory()) {
+        for (Updateable item : inventory()) {
             item.updateQuality();
         }
     }
@@ -35,7 +35,7 @@ public class GildedRose {
     @Override
     public String toString() {
         StringBuilder representation = new StringBuilder();
-        for (NormalItem item : inventory()) {
+        for (Updateable item : inventory()) {
             representation.append(item.toString());
             representation.append('\n');
         }

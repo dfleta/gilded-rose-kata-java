@@ -49,8 +49,13 @@ public class GildedRoseTest {
         assertEquals(2, shop.inventory().size(), 0);
         System.out.println("Dia 0:" + '\n' + shop.toString());
         shop.updateQuality();
-        assertEquals(19, shop.inventory().get(0).getQuality(), 0);
-        assertEquals(1, shop.inventory().get(1).getQuality(), 0);
+
+        // Hay que cambiar la vista del objeto Updateable 
+        // para tener acceso al metodo getQuality del
+        // tipo NormalItem
+        NormalItem item = (NormalItem) shop.inventory().get(0);
+        assertEquals(19, item.getQuality(), 0);
+        assertEquals(1, ((NormalItem) (shop.inventory().get(1))).getQuality(), 0);
         System.out.println("Dia 1:" + '\n' + shop.toString());
     }
 }
