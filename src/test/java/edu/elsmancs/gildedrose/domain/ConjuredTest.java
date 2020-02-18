@@ -3,9 +3,6 @@ package edu.elsmancs.gildedrose.domain;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import edu.elsmancs.gildedrose.domain.Conjured;
-
-
 public class ConjuredTest {
 
     @Test
