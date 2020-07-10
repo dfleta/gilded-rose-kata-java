@@ -11,7 +11,3 @@ target/
 
 # Library
 .settings/
-
-# UML
-diagrama_clases_UML.ucls
-GildedRose_diagrama_clases_UML.png
