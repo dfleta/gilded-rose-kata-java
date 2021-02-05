@@ -72,7 +72,7 @@ _"Se acepta normalmente que los objetos deben ser modificados unicamente a trav�
 
 Utiliza este diagrama de clases UML para guiarte en la implementación de las clases:
 
-![Diagrama de clases UML](./GildedRose_interfaces_diagrama_clases_UML.png)
+![Diagrama de clases UML](./diagrama_clases_UML.jpg)
 
 Básicamente, es el mismo diseño que entre todas las personas de clase hemos discurrido de manera colaborativa:
 
