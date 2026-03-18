@@ -33,31 +33,31 @@ public class NormalItem implements Updateable {
     }
 
     public String getName() {
-        return item.getName();
+        return this.item.getName();
     }
 
     public int getSell_in() {
-        return item.getSell_in();
+        return this.item.getSell_in();
     }
 
     void setSell_in() {
-        item.setSell_in();
+        this.item.setSell_in();
     }
 
     public int getQuality() {
-        return item.getQuality();
+        return this.item.getQuality();
     }
 
     void computeQuality(int value) {
 
         if (getQuality() + value > 50) {
-            item.setQuality(50);
+            this.item.setQuality(50);
         }
         else if (getQuality() + value >= 0) {
-            item.setQuality(getQuality() + value);
+            this.item.setQuality(getQuality() + value);
         }
         else {
-            item.setQuality(0);
+            this.item.setQuality(0);
         }
     }
 

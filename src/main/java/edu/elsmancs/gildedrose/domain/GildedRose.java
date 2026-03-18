@@ -5,8 +5,8 @@ import java.util.List;
 
 public class GildedRose {
 
-    private List<Updateable> inventory = new ArrayList<Updateable>();
-   
+    private final List<Updateable> inventory = new ArrayList<Updateable>();
+
     public List<Updateable> inventory() {
         return this.inventory;
     }
